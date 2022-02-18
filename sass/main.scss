@@ -1,5 +1,9 @@
 @import "./base/typography";
+@import "./base/base.scss";
 
 @import "./layout/header.scss";
 
 @import "./utils/variables";
+
+@import "./Fontawesome/scss/fontawesome.scss";
+@import "./Fontawesome/scss/solid.scss";
