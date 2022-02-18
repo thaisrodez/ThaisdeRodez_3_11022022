@@ -1,17 +1,93 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 11 | @import "./components/location";
- *    |         ^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass/main.scss 11:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 11 \2502  @import \"./components/location\";\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass/main.scss 11:9  root stylesheet";
+body {
+  font-family: "Roboto", sans-serif;
 }
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.text-light {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  padding: 16px 0px;
+  justify-content: center;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+  height: 32px;
+}
+header img {
+  width: 170px;
+}
+
+.grey-bg {
+  background-color: #f6f6f6;
+}
+
+button {
+  display: block;
+  color: white;
+  font-size: 16px;
+  margin: 16px auto;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 32px;
+  background: linear-gradient(176deg, #ff79da 3%, #9356dc 97%);
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  padding: 24px 0px;
+  margin: 16px 0px;
+  gap: 20px;
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+.card__num-round {
+  border-radius: 50%;
+  background-color: #9356dc;
+  padding: 4px 8px;
+  color: white;
+  font-size: 15px;
+  margin-left: -10px;
+}
+.card__icon {
+  color: #7e7e7e;
+  font-size: 20px;
+}
+.card:hover {
+  background-color: #f5edff;
+}
+
+.home__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9eaea;
+  padding: 16px;
+  box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0px -9px 9px -11px rgba(0, 0, 0, 0.1);
+}
+.home__location p {
+  margin-left: 16px;
+}
+.home__shop-banner {
+  text-align: center;
+  padding: 40px 24px;
+}
+.home__functionning-banner {
+  padding: 40px 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
