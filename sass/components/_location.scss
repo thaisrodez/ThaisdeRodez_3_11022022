@@ -1,0 +1,12 @@
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-grey;
+  padding: 16px;
+  box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.2);
+
+  p {
+    margin-left: 16px;
+  }
+}
