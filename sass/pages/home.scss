@@ -18,4 +18,8 @@
   &__functionning-banner {
     padding: 40px 24px;
   }
+  /* padding is not DRY */
+  &__restaurants {
+    padding: 40px 24px;
+  }
 }
