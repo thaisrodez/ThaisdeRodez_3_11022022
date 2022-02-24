@@ -13,13 +13,13 @@
   }
   &__shop-banner {
     text-align: center;
-    padding: 40px 24px;
+    @include banner-padding;
   }
   &__functionning-banner {
-    padding: 40px 24px;
+    @include banner-padding;
   }
   /* padding is not DRY */
   &__restaurants {
-    padding: 40px 24px;
+    @include banner-padding;
   }
 }

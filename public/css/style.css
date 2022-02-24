@@ -93,6 +93,9 @@ button {
   color: #7e7e7e;
   font-size: 20px;
 }
+.card__icon:hover {
+  color: #9356dc;
+}
 .card:hover {
   background-color: #f5edff;
 }
@@ -117,6 +120,7 @@ button {
   padding: 12px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .imgcard .label {
   position: absolute;
@@ -127,6 +131,12 @@ button {
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 500;
+}
+.imgcard i {
+  font-size: 24px;
+}
+.imgcard i:active {
+  color: linear-gradient(176deg, #ff79da 3%, #9356dc 97%);
 }
 
 .home {
