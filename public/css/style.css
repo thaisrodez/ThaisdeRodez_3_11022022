@@ -57,10 +57,6 @@ a {
   left: 20px;
 }
 
-.grey-bg {
-  background-color: #f6f6f6;
-}
-
 footer {
   background-color: #353535;
   display: flex;
@@ -101,6 +97,7 @@ button {
   padding: 24px 0px;
   margin: 20px 0px;
   gap: 20px;
+  background-color: #f6f6f6;
   box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
   transition: 1s;
 }
@@ -202,9 +199,6 @@ button {
   fill: linear-gradient(176deg, #ff79da 1%, #9356dc 99%);
 }
 
-.home {
-  /* padding is not DRY */
-}
 .home__location {
   display: flex;
   justify-content: center;
@@ -218,6 +212,7 @@ button {
 .home__shop-banner {
   text-align: center;
   padding: 40px 24px;
+  background-color: #f6f6f6;
 }
 .home__functionning-banner {
   padding: 40px 24px;
@@ -227,6 +222,7 @@ button {
 }
 .home__restaurants {
   padding: 40px 24px;
+  background-color: #f6f6f6;
 }
 
 .restaurant {

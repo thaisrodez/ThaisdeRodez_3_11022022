@@ -13,16 +13,15 @@
   }
   &__shop-banner {
     text-align: center;
-    @include banner-padding;
+    @include grey-container;
   }
   &__functionning-banner {
-    @include banner-padding;
+    padding: $banner-padding;
     h2 {
       margin-bottom: 2rem;
     }
   }
-  /* padding is not DRY */
   &__restaurants {
-    @include banner-padding;
+    @include grey-container;
   }
 }
