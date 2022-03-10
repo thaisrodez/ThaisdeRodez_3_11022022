@@ -8,8 +8,9 @@
 @import "./layout/containers.scss";
 @import "./layout/footer.scss";
 
-@import "./ui/buttons";
-
+@import "./components/buttons";
 @import "./components/cards";
+@import "./components/heart";
 
 @import "./pages/home.scss";
+@import "./pages/menu.scss";
