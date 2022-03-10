@@ -9,3 +9,9 @@ button {
   background: linear-gradient(176deg, $secondary-color 1%, $primary-color 99%);
   box-shadow: $box-shadow;
 }
+
+.btn--wide {
+  width: 190px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
