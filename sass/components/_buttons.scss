@@ -1,0 +1,11 @@
+button {
+  display: block;
+  color: white;
+  font-size: 16px;
+  margin: 16px auto;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 32px;
+  background: linear-gradient(176deg, $secondary-color 1%, $primary-color 99%);
+  box-shadow: $box-shadow;
+}
