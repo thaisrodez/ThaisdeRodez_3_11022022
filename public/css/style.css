@@ -33,11 +33,17 @@ header {
   display: flex;
   padding: 16px 0px;
   justify-content: center;
+  align-items: center;
   box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
   height: 32px;
 }
 header img {
   width: 170px;
+}
+header i {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
 }
 
 .grey-bg {
@@ -67,7 +73,7 @@ button {
   padding: 16px 24px;
   border: none;
   border-radius: 32px;
-  background: linear-gradient(176deg, #ff79da 3%, #9356dc 97%);
+  background: linear-gradient(176deg, #ff79da 1%, #9356dc 99%);
   box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -76,7 +82,7 @@ button {
   display: flex;
   align-items: center;
   padding: 24px 0px;
-  margin: 16px 0px;
+  margin: 20px 0px;
   gap: 20px;
   box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
   transition: 1s;
@@ -93,11 +99,11 @@ button {
   color: #7e7e7e;
   font-size: 20px;
 }
-.card__icon:hover {
-  color: #9356dc;
-}
 .card:hover {
   background-color: #f5edff;
+}
+.card:hover .icon-color {
+  color: #9356dc;
 }
 
 .imgcard {
@@ -135,8 +141,16 @@ button {
 .imgcard i {
   font-size: 24px;
 }
-.imgcard i:active {
-  color: linear-gradient(176deg, #ff79da 3%, #9356dc 97%);
+.imgcard i:hover {
+  color: #9356dc;
+}
+
+.heart {
+  height: 32px;
+  fill: none;
+}
+.heart:hover {
+  fill: linear-gradient(176deg, #ff79da 1%, #9356dc 99%);
 }
 
 .home {
@@ -145,7 +159,6 @@ button {
 .home__location {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #e9eaea;
   padding: 16px;
   box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0px -9px 9px -11px rgba(0, 0, 0, 0.1);
@@ -160,8 +173,24 @@ button {
 .home__functionning-banner {
   padding: 40px 24px;
 }
+.home__functionning-banner h2 {
+  margin-bottom: 2rem;
+}
 .home__restaurants {
   padding: 40px 24px;
+}
+
+.menu__picture img {
+  height: 280px;
+  object-fit: cover;
+}
+.menu__choices {
+  background-color: #f6f6f6;
+  height: 300px;
+  width: 100%;
+  border-radius: 48px 48px 0 0;
+  margin-top: -50px;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

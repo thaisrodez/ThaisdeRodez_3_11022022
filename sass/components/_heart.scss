@@ -1,0 +1,7 @@
+.heart {
+  height: 32px;
+  fill: none;
+  &:hover {
+    fill: $linear-gradient;
+  }
+}
