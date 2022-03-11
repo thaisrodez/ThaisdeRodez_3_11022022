@@ -39,6 +39,16 @@ a {
   width: 100%;
   object-fit: cover;
 }
+@media screen and (min-width: 992px) {
+  .restaurant--picture {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurant--picture {
+    height: 350px;
+  }
+}
 
 .header-logo {
   width: 100%;
@@ -92,14 +102,19 @@ button {
 
 .card {
   border-radius: 24px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 24px 0px;
-  margin: 20px 0px;
   gap: 20px;
   background-color: #f6f6f6;
   box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
   transition: 1s;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card {
+    width: 60%;
+  }
 }
 .card__num-round {
   border-radius: 50%;
@@ -209,20 +224,57 @@ button {
 .home__location p {
   margin-left: 16px;
 }
-.home__shop-banner {
+
+.shop-banner {
   text-align: center;
   padding: 40px 24px;
   background-color: #f6f6f6;
 }
-.home__functionning-banner {
+
+.functionning-banner {
   padding: 40px 24px;
 }
-.home__functionning-banner h2 {
+.functionning-banner h2 {
   margin-bottom: 2rem;
 }
-.home__restaurants {
+.functionning-banner__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .functionning-banner__cards {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .functionning-banner__cards {
+    align-items: center;
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 40px 24px;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 992px) {
+  .restaurants__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurants__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
 }
 
 .restaurant {
@@ -232,17 +284,35 @@ button {
   position: relative;
   padding: 32px 16px;
 }
+@media screen and (min-width: 992px) {
+  .restaurant {
+    padding: 32px 48px;
+  }
+}
 .restaurant__title {
   display: flex;
   justify-content: space-between;
   font-family: "Shrikhand", cursive;
   padding-right: 18px;
 }
+@media screen and (min-width: 992px) {
+  .restaurant__title {
+    justify-content: flex-start;
+    gap: 32px;
+  }
+}
 
 .menu {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+  }
 }
 .menu h3 {
   font-weight: 100;

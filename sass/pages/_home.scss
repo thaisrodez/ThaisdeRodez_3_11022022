@@ -11,17 +11,44 @@
       margin-left: 16px;
     }
   }
-  &__shop-banner {
-    text-align: center;
-    @include grey-container;
+}
+
+.shop-banner {
+  text-align: center;
+  @include grey-container;
+}
+
+.functionning-banner {
+  padding: $banner-padding;
+  h2 {
+    margin-bottom: 2rem;
   }
-  &__functionning-banner {
-    padding: $banner-padding;
-    h2 {
-      margin-bottom: 2rem;
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @include desktop-only {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 4rem;
+    }
+    @include tablet-only {
+      align-items: center;
     }
   }
-  &__restaurants {
-    @include grey-container;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include grey-container;
+  &__cards {
+    @include desktop-only {
+      @include grid(4, 2rem);
+    }
+    @include tablet-only {
+      @include grid(2, 2rem);
+    }
   }
 }

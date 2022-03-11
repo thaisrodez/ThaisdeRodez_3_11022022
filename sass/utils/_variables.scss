@@ -14,3 +14,9 @@ $linear-gradient: linear-gradient(
   $secondary-color 1%,
   $primary-color 99%
 );
+
+// Responsive breakpoints
+$breakpoints: (
+  mobile: 768px,
+  tablet: 992px,
+);

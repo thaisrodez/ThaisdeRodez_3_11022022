@@ -2,6 +2,12 @@
   height: 280px;
   width: 100%;
   object-fit: cover;
+  @include desktop-only {
+    height: 400px;
+  }
+  @include tablet-only {
+    height: 350px;
+  }
 }
 
 .header-logo {
