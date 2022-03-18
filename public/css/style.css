@@ -208,10 +208,19 @@ button {
 
 .heart {
   height: 32px;
-  fill: none;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 1px;
 }
 .heart:hover {
-  fill: linear-gradient(176deg, #ff79da 1%, #9356dc 99%);
+  fill: url(#gradient-horizontal) #9356dc;
+  stroke-width: 0px;
+}
+
+#gradient-horizontal {
+  --color-stop-1: #9356dc;
+  --color-stop-2: #b261dd;
+  --color-stop-3: #ff79da;
 }
 
 .home__location {
