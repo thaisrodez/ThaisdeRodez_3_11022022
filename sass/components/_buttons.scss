@@ -8,6 +8,15 @@ button {
   border-radius: 32px;
   background: linear-gradient(176deg, $secondary-color 1%, $primary-color 99%);
   box-shadow: $box-shadow;
+  transition: box-shadow 300ms, background 250ms;
+  &:hover {
+    box-shadow: 4px 4px 8px 2px rgb(0, 0, 0, 0.18);
+    background: linear-gradient(
+      176deg,
+      lighten($secondary-color, 3%) 1%,
+      lighten($primary-color, 3%) 99%
+    );
+  }
 }
 
 .btn--wide {
