@@ -1,4 +1,4 @@
-button {
+.btn {
   display: block;
   color: white;
   font-size: 16px;
@@ -8,14 +8,31 @@ button {
   border-radius: 32px;
   background: linear-gradient(176deg, $secondary-color 1%, $primary-color 99%);
   box-shadow: $box-shadow;
-  transition: box-shadow 300ms, background 250ms;
+  position: relative;
+  z-index: 1;
   &:hover {
-    box-shadow: 4px 4px 8px 2px rgb(0, 0, 0, 0.18);
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: "";
+    border-radius: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: linear-gradient(
       176deg,
       lighten($secondary-color, 3%) 1%,
       lighten($primary-color, 3%) 99%
     );
+    box-shadow: 4px 4px 8px 2px rgb(0, 0, 0, 0.18);
+
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
 }
 
