@@ -3,6 +3,7 @@
   fill: transparent;
   stroke: black;
   stroke-width: 1px;
+  transition: fill 200ms, stroke 1ms;
   &:hover {
     fill: url(#gradient-horizontal) #9356dc;
     stroke-width: 0px;
