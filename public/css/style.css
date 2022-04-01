@@ -61,10 +61,12 @@ a {
 .header-logo img {
   width: 170px;
 }
-.header-logo i {
-  font-size: 20px;
+.header-logo a {
   position: absolute;
   left: 20px;
+}
+.header-logo a i {
+  font-size: 20px;
 }
 
 footer {
@@ -199,28 +201,57 @@ footer p {
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
-.menu-card__text {
+.menu-card__details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu-card__details__text {
   padding: 12px;
-  flex-grow: 1;
+  width: 100px;
+  flex: 1;
 }
-.menu-card__text p {
+.menu-card__details__text h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-card__details__text p {
   font-weight: 100;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu-card__price {
+.menu-card__details__price {
   padding: 12px 16px;
   display: flex;
   align-items: flex-end;
 }
-.menu-card__select {
+.menu-card__details:hover + .menu-select {
+  transform: translateX(0);
+  width: 80px;
+  transition: all 0.3s;
+}
+.menu-card__details:hover + .menu-select i {
+  transform: rotate(0turn);
+}
+
+.menu-select {
   background-color: #99e2d0;
   border-radius: 0 16px 16px 0;
   display: flex;
   align-items: center;
+  transform: translateX(80px);
+  width: 0px;
+  transition: all 0.3s;
 }
-.menu-card__select i {
-  margin: 20px;
+.menu-select i {
+  transform: rotate(-1turn);
+  transition: transform 300ms 250ms ease-in-out;
+  margin: 20px 24px;
   color: white;
   font-size: 20px;
 }
@@ -340,7 +371,7 @@ footer p {
   .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 6rem;
+    grid-gap: 3rem;
   }
 }
 .menu h3 {

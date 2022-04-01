@@ -76,28 +76,55 @@
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
-  &__text {
-    padding: 12px;
-    flex-grow: 1;
-    p {
-      font-weight: 100;
-      font-size: 14px;
+  overflow: hidden;
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    // flex-grow: 1;
+    width: 100%;
+    &__text {
+      padding: 12px;
+      width: 100px;
+      flex: 1;
+
+      h4 {
+        @include truncate;
+      }
+      p {
+        font-weight: 100;
+        font-size: 14px;
+        @include truncate;
+      }
+    }
+    &__price {
+      padding: 12px 16px;
+      display: flex;
+      align-items: flex-end;
+    }
+    &:hover + .menu-select {
+      transform: translateX(0);
+      width: 80px;
+      transition: all 0.3s;
+      i {
+        transform: rotate(0turn);
+      }
     }
   }
-  &__price {
-    padding: 12px 16px;
-    display: flex;
-    align-items: flex-end;
-  }
-  &__select {
-    background-color: $tertiary-color;
-    border-radius: 0 16px 16px 0;
-    display: flex;
-    align-items: center;
-    i {
-      margin: 20px;
-      color: white;
-      font-size: 20px;
-    }
+}
+
+.menu-select {
+  background-color: $tertiary-color;
+  border-radius: 0 16px 16px 0;
+  display: flex;
+  align-items: center;
+  transform: translateX(80px);
+  width: 0px;
+  transition: all 0.3s;
+  i {
+    transform: rotate(-1turn);
+    transition: transform 300ms 250ms ease-in-out;
+    margin: 20px 24px;
+    color: white;
+    font-size: 20px;
   }
 }
