@@ -34,6 +34,38 @@ a {
   margin: 0;
 }
 
+body {
+  position: relative;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes progressive-display {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .restaurant--picture {
   height: 280px;
   width: 100%;
@@ -202,6 +234,16 @@ footer p {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  animation: progressive-display 600ms backwards;
+}
+.menu-card--1 {
+  animation-delay: 200ms;
+}
+.menu-card--2 {
+  animation-delay: 400ms;
+}
+.menu-card--3 {
+  animation-delay: 600ms;
 }
 .menu-card__details {
   display: flex;
@@ -272,6 +314,26 @@ footer p {
   --color-stop-1: #9356dc;
   --color-stop-2: #b261dd;
   --color-stop-3: #ff79da;
+}
+
+.loading {
+  background-color: #9356dc;
+  width: 100vw;
+  height: 100%;
+  animation: loader 3s 500ms both;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+}
+.loading i {
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 50%;
+  font-size: 72px;
+  animation: rotate 1000ms infinite backwards;
 }
 
 .home__location {

@@ -77,6 +77,12 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  animation: progressive-display $anim-dur backwards;
+  @for $i from 1 through $num-cards {
+    &--#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+  }
   &__details {
     display: flex;
     justify-content: space-between;

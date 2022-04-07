@@ -9,6 +9,10 @@ $box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
 
 $banner-padding: 40px 24px;
 
+$num-cards: 3;
+$anim-dur: 600ms;
+$anim-delay: calc($anim-dur / $num-cards);
+
 $linear-gradient: linear-gradient(
   176deg,
   $secondary-color 1%,
