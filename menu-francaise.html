@@ -21,7 +21,9 @@
 
     <link rel="stylesheet" href="public/css/style.css" />
   </head>
+
   <body>
+    <!-- header -->
     <header>
       <div class="header-logo">
         <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
@@ -34,6 +36,7 @@
       />
     </header>
     <main class="restaurant">
+        <!-- restaurant header -->
         <div class="restaurant__title">
           <h2>À la française</h2>
           <svg
@@ -48,10 +51,21 @@
                 stroke-linejoin="round"
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
               />
+              <linearGradient
+                id="gradient-horizontal"
+                x1="1"
+                x2="0"
+                y1="0"
+                y2="1"
+              >
+                <stop offset="0%" stop-color="var(--color-stop-1)" />
+                <stop offset="50%" stop-color="var(--color-stop-2)" />
+                <stop offset="100%" stop-color="var(--color-stop-3)" />
+              </linearGradient>
           </svg>
         </div>
         <div class="menu">
-          <!-- starters -->
+          <!-- starters cards -->
           <div class="menu__item">
           <h3>ENTRÉES</h3>
             <div class="menu-card menu-card--1">
@@ -97,7 +111,7 @@
               </div>
             </div>
           </div>
-          <!-- main dish -->
+          <!-- main dish cards -->
           <div class="menu__item">
           <h3>PLATS</h3>
             <div class="menu-card menu-card--1">
@@ -143,7 +157,7 @@
               </div>
             </div>
           </div>
-          <!-- desert -->
+          <!-- desert cards -->
           <div class="menu__item">
           <h3>DESSERTS</h3>
             <div class="menu-card menu-card--1">
@@ -192,10 +206,14 @@
         </div>
       </div>
       </section>
+
+      <!-- Order button -->
       <button class="btn btn--wide">
         Commander
       </button>
     </main>
+
+    <!-- Footer -->
     <footer>
       <p>ohmyfood</p>
       <a href="#">
