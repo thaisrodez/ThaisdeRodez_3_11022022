@@ -230,16 +230,19 @@ footer p {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  animation: progressive-display 600ms backwards;
+  animation: progressive-display 700ms backwards;
 }
 .menu-card--1 {
-  animation-delay: 200ms;
+  animation-delay: 175ms;
 }
 .menu-card--2 {
-  animation-delay: 400ms;
+  animation-delay: 350ms;
 }
 .menu-card--3 {
-  animation-delay: 600ms;
+  animation-delay: 525ms;
+}
+.menu-card--4 {
+  animation-delay: 700ms;
 }
 .menu-card__details {
   display: flex;
