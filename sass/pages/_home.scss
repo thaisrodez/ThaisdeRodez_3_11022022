@@ -17,6 +17,7 @@
   @include grey-container;
 }
 
+
 .functionning-banner {
   padding: $banner-padding;
   h2 {
@@ -37,6 +38,7 @@
   }
 }
 
+// Restaurant container
 .restaurants {
   display: flex;
   flex-direction: column;
