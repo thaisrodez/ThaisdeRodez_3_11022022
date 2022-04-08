@@ -22,16 +22,35 @@
     <link rel="stylesheet" href="public/css/style.css" />
   </head>
   <body>
+    <!-- Loading spinner -->
+    <div class="loading">
+      <div class="lds-roller">
+        <div class="roller roller--1"></div>
+        <div class="roller roller--2"></div>
+        <div class="roller roller--3"></div>
+        <div class="roller roller--4"></div>
+        <div class="roller roller--5"></div>
+        <div class="roller roller--6"></div>
+        <div class="roller roller--7"></div>
+        <div class="roller roller--8"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
     <header>
       <div class="header-logo">
         <img src="public/images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
       </div>
     </header>
+
     <main classe="home">
+      <!-- User location -->
       <section class="home__location">
         <i class="fa-solid fa-location-dot"></i>
         <p>Paris, Belleville</p>
       </section>
+
+      <!-- Promo banner -->
       <section class="shop-banner">
         <h2>Réservez le menu qui vous convient</h2>
         <p class="text-light">
@@ -39,6 +58,8 @@
         </p>
         <button class="btn">Explorer nos restaurants</button>
       </section>
+
+      <!-- Banner presenting website functionment -->
       <section class="functionning-banner">
         <h2>Fonctionnement</h2>
         <div class="functionning-banner__cards">
@@ -61,6 +82,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Restaurants cards -->
       <section class="restaurants">
         <h2>Restaurants</h2>
         <div class="restaurants__cards">
@@ -198,6 +221,8 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer>
       <p>ohmyfood</p>
       <a href="#"

@@ -1,24 +1,24 @@
+// Loader animation
 @keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
   100% {
     z-index: -1;
+    opacity: 0;
   }
 }
 
-@keyframes rotate {
+// Spinner animation
+@keyframes lds-roller {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
+    display: none;
   }
 }
 
+// Menu display animation
 @keyframes progressive-display {
   0% {
     opacity: 0;

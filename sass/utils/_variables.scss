@@ -5,19 +5,23 @@ $tertiary-color: #99e2d0;
 $dark-grey: #e9eaea;
 $light-grey: #f6f6f6;
 
+$linear-gradient: linear-gradient(176deg,
+  $secondary-color 1%,
+  $primary-color 99%);
+
 $box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
 
 $banner-padding: 40px 24px;
 
+// Menu display animation
 $num-cards: 3;
 $anim-dur: 600ms;
 $anim-delay: calc($anim-dur / $num-cards);
 
-$linear-gradient: linear-gradient(
-  176deg,
-  $secondary-color 1%,
-  $primary-color 99%
-);
+// Spinner animation
+$num-roller: 8;
+$roller-dur: 1.2s;
+$roller-delay: -0.036s;
 
 // Responsive breakpoints
 $breakpoints: (
