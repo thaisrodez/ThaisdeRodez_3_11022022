@@ -1,5 +1,4 @@
-.home {
-  &__location {
+.location {
     display: flex;
     justify-content: center;
     background-color: $dark-grey;
@@ -10,7 +9,6 @@
       margin-left: 16px;
     }
   }
-}
 
 .shop-banner {
   text-align: center;

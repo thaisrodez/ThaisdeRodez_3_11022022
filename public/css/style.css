@@ -407,14 +407,14 @@ footer p {
   left: 12px;
 }
 
-.home__location {
+.location {
   display: flex;
   justify-content: center;
   background-color: #e9eaea;
   padding: 16px;
   box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0px -9px 9px -11px rgba(0, 0, 0, 0.1);
 }
-.home__location p {
+.location p {
   margin-left: 16px;
 }
 
