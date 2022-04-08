@@ -39,22 +39,18 @@ body {
 }
 
 @keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
   100% {
     z-index: -1;
+    opacity: 0;
   }
 }
-@keyframes rotate {
+@keyframes lds-roller {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+    display: none;
   }
 }
 @keyframes progressive-display {
@@ -317,23 +313,98 @@ footer p {
 }
 
 .loading {
-  background-color: #9356dc;
-  width: 100vw;
-  height: 100%;
-  animation: loader 3s 500ms both;
-  position: absolute;
+  display: block;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
-  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(176deg, #ff79da 1%, #9356dc 99%);
+  animation: loader 1s 2s ease-out forwards;
+  z-index: 10;
 }
-.loading i {
+
+.lds-roller {
+  position: fixed;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller .roller {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite forwards;
+  transform-origin: 40px 40px;
+}
+.lds-roller .roller--1 {
+  animation-delay: -0.036s;
+}
+.lds-roller .roller--2 {
+  animation-delay: -0.072s;
+}
+.lds-roller .roller--3 {
+  animation-delay: -0.108s;
+}
+.lds-roller .roller--4 {
+  animation-delay: -0.144s;
+}
+.lds-roller .roller--5 {
+  animation-delay: -0.18s;
+}
+.lds-roller .roller--6 {
+  animation-delay: -0.216s;
+}
+.lds-roller .roller--7 {
+  animation-delay: -0.252s;
+}
+.lds-roller .roller--8 {
+  animation-delay: -0.288s;
+}
+.lds-roller .roller::after {
+  content: " ";
+  display: block;
   position: absolute;
-  color: white;
-  top: 30%;
-  left: 50%;
-  font-size: 72px;
-  animation: rotate 1000ms infinite backwards;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller .roller:nth-child(1)::after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller .roller:nth-child(2)::after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller .roller:nth-child(3)::after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller .roller:nth-child(4)::after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller .roller:nth-child(5)::after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller .roller:nth-child(6)::after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller .roller:nth-child(7)::after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller .roller:nth-child(8)::after {
+  top: 56px;
+  left: 12px;
 }
 
 .home__location {

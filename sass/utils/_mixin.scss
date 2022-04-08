@@ -3,18 +3,21 @@
   background-color: $light-grey;
 }
 
+// Text truncate
 @mixin truncate {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+// Grid template for desktop
 @mixin grid($columns, $gap) {
   display: grid;
   grid-template-columns: repeat($columns, 1fr);
   grid-gap: $gap;
 }
 
+// Responsive display
 @mixin desktop-only {
   @media screen and (min-width: map-get($breakpoints, tablet)) {
     @content;
