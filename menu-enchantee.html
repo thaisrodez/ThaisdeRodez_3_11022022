@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ohMyFood</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-logo">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="public/images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
+      </div>
+      <img
+        src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        class="restaurant--picture"
+        alt="A la française"
+      />
+    </header>
+    <main class="restaurant">
+      <!-- restaurant header -->
+      <div class="restaurant__title">
+        <h2>La note enchantée</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="heart"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+          />
+          <linearGradient id="gradient-horizontal" x1="1" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="var(--color-stop-1)" />
+            <stop offset="50%" stop-color="var(--color-stop-2)" />
+            <stop offset="100%" stop-color="var(--color-stop-3)" />
+          </linearGradient>
+        </svg>
+      </div>
+      <div class="menu">
+        <!-- starters cards -->
+        <div class="menu__item">
+          <h3>ENTRÉES</h3>
+          <div class="menu-card menu-card--1">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Ravioles de foie gras</h4>
+                <p>Accompagnés de leur crème à la truffe</p>
+              </div>
+              <div class="menu-card__details__price">25€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <div class="menu-card menu-card--2">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Caviar osciètre</h4>
+                <p>Sur blini à la farine de blé noir</p>
+              </div>
+              <div class="menu-card__details__price">35€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <div class="menu-card menu-card--3">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Homard et espuma de potiron</h4>
+                <p>Mariné aux zestes d'orange</p>
+              </div>
+              <div class="menu-card__details__price">20€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <div class="menu-card menu-card--4">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Foie gras de canard cuit entier</h4>
+                <p>Confiture de figue et pain toasté</p>
+              </div>
+              <div class="menu-card__details__price">35€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+        <!-- main dish cards -->
+        <div class="menu__item">
+          <h3>PLATS</h3>
+          <div class="menu-card menu-card--1">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Noix de coquilles Saint-Jacques</h4>
+                <p>Sur lit de purée de céleri-rave</p>
+              </div>
+              <div class="menu-card__details__price">40€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <div class="menu-card menu-card--2">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Langoustine poêlée</h4>
+                <p>Purée de patate douce</p>
+              </div>
+              <div class="menu-card__details__price">35€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <div class="menu-card menu-card--3">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Mijoté de queue de boeuf</h4>
+                <p>Et riz sauvage aux zestes de citron</p>
+              </div>
+              <div class="menu-card__details__price">44€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+        <!-- desert cards -->
+        <div class="menu__item">
+          <h3>DESSERTS</h3>
+          <div class="menu-card menu-card--1">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Macaron noisette et chocolat</h4>
+                <p>Glace au caramel brun et sel de Guérande</p>
+              </div>
+              <div class="menu-card__details__price">18€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <div class="menu-card menu-card--2">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Baba au rhum revisité</h4>
+                <p>Avec son coulis de citron</p>
+              </div>
+              <div class="menu-card__details__price">22€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <div class="menu-card menu-card--3">
+            <div class="menu-card__details">
+              <div class="menu-card__details__text">
+                <h4>Tarte au citron meringuée</h4>
+                <p>Déstructurée</p>
+              </div>
+              <div class="menu-card__details__price">23€</div>
+            </div>
+            <div class="menu-select">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order button -->
+      <button class="btn btn--wide">Commander</button>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>ohmyfood</p>
+      <a href="#">
+        <i class="fa-solid fa-utensils"></i>
+        Proposer un restaurant
+      </a>
+      <a href="#">
+        <i class="fa-solid fa-handshake-angle"></i>
+        Devenir partenaire
+      </a>
+      <a href="#">Mentions legales</a>
+      <a href="mailto:contact@ohmyfood.com">Contact</a>
+    </footer>
+  </body>
+</html>
