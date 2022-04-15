@@ -426,6 +426,7 @@ footer p {
   background-color: inherit;
   width: 132px;
   font-size: 16px;
+  outline: none;
 }
 .location #location::placeholder {
   color: black;
