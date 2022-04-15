@@ -1,22 +1,15 @@
-.restaurant--picture {
-  height: 280px;
-  width: 100%;
-  object-fit: cover;
-  @include desktop-only {
-    height: 400px;
-  }
-  @include tablet-only {
-    height: 350px;
-  }
-}
-
+// Restaurant page header
 .header-logo {
-  width: 100%;
+  margin:auto;
   display: flex;
   padding: 16px 0px;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+  .logo-link {
+    position: relative;
+    left: 0;
+  }
   img {
     width: 170px;
   }
@@ -26,5 +19,20 @@
     i {
       font-size: 20px;
     }
+  }
+}
+
+// header illustration on restaurant page
+.restaurant--picture {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+
+  @include desktop-only {
+    height: 400px;
+  }
+
+  @include tablet-only {
+    height: 350px;
   }
 }
