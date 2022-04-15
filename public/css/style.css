@@ -62,6 +62,29 @@ body {
     opacity: 1;
   }
 }
+.header-logo {
+  margin: auto;
+  display: flex;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+}
+.header-logo .logo-link {
+  position: relative;
+  left: 0;
+}
+.header-logo img {
+  width: 170px;
+}
+.header-logo a {
+  position: absolute;
+  left: 20px;
+}
+.header-logo a i {
+  font-size: 20px;
+}
+
 .restaurant--picture {
   height: 280px;
   width: 100%;
@@ -76,25 +99,6 @@ body {
   .restaurant--picture {
     height: 350px;
   }
-}
-
-.header-logo {
-  width: 100%;
-  display: flex;
-  padding: 16px 0px;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
-}
-.header-logo img {
-  width: 170px;
-}
-.header-logo a {
-  position: absolute;
-  left: 20px;
-}
-.header-logo a i {
-  font-size: 20px;
 }
 
 footer {
@@ -115,7 +119,9 @@ footer p {
 .btn {
   display: block;
   color: white;
+  text-align: center;
   font-size: 16px;
+  width: fit-content;
   margin: 16px auto;
   padding: 16px 24px;
   border: none;
@@ -230,6 +236,7 @@ footer p {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  cursor: pointer;
   animation: progressive-display 700ms backwards;
 }
 .menu-card--1 {
@@ -254,7 +261,7 @@ footer p {
   width: 100px;
   flex: 1;
 }
-.menu-card__details__text h4 {
+.menu-card__details__text h4, .menu-card__details__text p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -262,21 +269,18 @@ footer p {
 .menu-card__details__text p {
   font-weight: 100;
   font-size: 14px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu-card__details__price {
   padding: 12px 16px;
   display: flex;
   align-items: flex-end;
 }
-.menu-card__details:hover + .menu-select {
+.menu-card:hover .menu-select {
   transform: translateX(0);
   width: 80px;
   transition: all 0.3s;
 }
-.menu-card__details:hover + .menu-select i {
+.menu-card:hover .menu-select i {
   transform: rotate(0turn);
 }
 
@@ -416,8 +420,17 @@ footer p {
   padding: 16px;
   box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.2), inset 0px -9px 9px -11px rgba(0, 0, 0, 0.1);
 }
-.location p {
-  margin-left: 16px;
+.location #location {
+  border: none;
+  background-color: inherit;
+  width: 132px;
+  font-size: 16px;
+}
+.location #location::placeholder {
+  color: black;
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1;
+  /* Firefox */
 }
 
 .shop-banner {
