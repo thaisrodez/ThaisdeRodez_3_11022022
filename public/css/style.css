@@ -36,6 +36,7 @@ a {
 
 body {
   position: relative;
+  scroll-behavior: smooth;
 }
 
 @keyframes loader {
