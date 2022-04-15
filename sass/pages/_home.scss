@@ -5,8 +5,15 @@
     padding: 16px;
     box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.2),
       inset 0px -9px 9px -11px rgba(0, 0, 0, 0.1);
-    p {
-      margin-left: 16px;
+    #location {
+      border: none;
+      background-color: inherit;
+      width: 132px;
+      font-size: 16px;
+      &::placeholder {
+        color: black; /* Chrome, Firefox, Opera, Safari 10.1+ */
+        opacity: 1; /* Firefox */
+      }
     }
   }
 
