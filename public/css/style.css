@@ -423,9 +423,11 @@ footer p {
 }
 .location #location {
   border: none;
-  background-color: inherit;
+  background-color: #e9eaea;
   width: 132px;
   font-size: 16px;
+}
+.location #location:focus {
   outline: none;
 }
 .location #location::placeholder {

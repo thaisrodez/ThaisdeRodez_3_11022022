@@ -7,10 +7,12 @@
       inset 0px -9px 9px -11px rgba(0, 0, 0, 0.1);
     #location {
       border: none;
-      background-color: inherit;
+      background-color: $dark-grey;;
       width: 132px;
       font-size: 16px;
-      outline: none;
+      &:focus {
+        outline: none;
+      }
       &::placeholder {
         color: black; /* Chrome, Firefox, Opera, Safari 10.1+ */
         opacity: 1; /* Firefox */
